@@ -13,7 +13,7 @@ const newRandomCard = () => {
   }
 }
 
-function omit(obj, ketToOmit) {
+function omit(obj, keyToOmit) {
   return Object.entries(obj).reduce(
     (newObj, [key, value]) => 
       key === keyToOmit ? newObj : {...newObj, [key]: value},
